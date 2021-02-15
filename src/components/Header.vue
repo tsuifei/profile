@@ -19,102 +19,86 @@ export default {
 <template>
 <div id="header" :class="{openMenu:isOpenMenu}" >
   <nav >
-    <router-link to="/" class="my-name">TsuiFei</router-link>
-    <a  @click="handOpenMenu" href="javascript:;" class="menu_btn"></a>
+    <router-link to="/" class="my-name">TsuiFei Pommier</router-link>
+    <a @click="handOpenMenu" href="javascript:;" class="menu_btn"></a>
     <div>
-      <router-link to="/profile">Profile</router-link>
-      <router-link to="/skills">Skills</router-link>
-      <router-link to="/portfolio">Portfolio</router-link>
+      <router-link to="/profile"><a @click="handOpenMenu">Profile</a></router-link>
+      <router-link to="/skills"><a @click="handOpenMenu">Skills</a></router-link>
+      <router-link to="/portfolio"><a @click="handOpenMenu">Portfolio</a></router-link>
     </div>
   </nav>
 
 </div>
 </template>
 <style scoped lang="scss">
+@import "~@/assets/css/reset";
+@import "~@/assets/css/variables";
+@import "~@/assets/css/base";
+
 #header{
-  background-color: #76b852;
+  background-color: $color-primary;
   width: 100%;
   position: fixed;
   top:0;
-  // max-width: 1240px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // height: 97px;
+  z-index: 10;
+  @media screen and (max-width: 1024px) {
+      padding: 0px 20px;  
+    }
   
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 575.98px) {
     transition: height 0.2s;
     height: auto;
     overflow: hidden;
-    
+    padding: 0 20px;
     
     &.openMenu {
       height: 230px;
     }
   }
-  
-  > a {
-  color: #fff;
-  }
 
-  > a:hover {
-  color: #76b852;
-  font-weight: 500;
-  }
   > nav {
     width: 100%;
     max-width: 1240px;
     height: 100%;
     margin: 0 auto;
-
+    
     @media screen and (max-width: 1044px) {
       width: 100%;
     }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 575.98px) {
       width: 100%;
-      
-      // height: 232px;
     }
     > .my-name {
       // display: block;
-      font-size: 1.5em;
+      font-size: 2.5rem;
       font-weight: 600;
       text-decoration: none;
       line-height: 97px;
       align-items: center;
       color: #fff;
-      @media screen and (max-width: 640px) {
-      width: 100%;
-      line-height: 60px;
-      align-items: center;
-      padding-left: 10px;
-      // line-height: 47px;
+      @media screen and (max-width: 575.98px) {
+        font-size: 2rem;
+        width: 100%;
+        line-height: 70px;
+        align-items: center;
       }
     }
     > div {
       text-align: right;
-      // width: 100%;
-      // height: 100%;
-      // border: 1px solid red;
       float: right;
-      @media screen and (max-width: 640px) {
-        // clear: both;
+      @media screen and (max-width: 575.98px) {
         width: 100%;
-        // background-color: aqua;
         height: 0;
-        
-        
       }
       > a {
         display: inline-block;
         line-height: 97px;
-        font-size: 1rem;
-        // float: left;
-        color: #fff;
+        font-size: 1.3rem;
+        color: $color-second;
         padding: 0 0 0 20px;
         text-decoration: none;
         transition: all 0.3s ease-in;
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 575.98px) {
           width: 100%;
           height: auto;
           overflow: hidden;
@@ -124,7 +108,6 @@ export default {
         }
       }
       > a:hover{
-        font-weight:800;
         cursor: pointer;
         transform: translateY(-5px)
       }
@@ -135,21 +118,19 @@ export default {
 
 a.menu_btn{
   display: none;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 575.98px) {
   width: 40px;
   height: 40px;
-  background-color: #8b8b8b;
+  background-color: $color-second;
   display: block;
   color: #fff;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 20px;
   border-radius: 5px;
   }
 }
-// .menu_btn span{
-//   opacity: 0;
-// }
+
 /* 偽元素漢堡三橫線 */
 .menu_btn::before{
   content: '';

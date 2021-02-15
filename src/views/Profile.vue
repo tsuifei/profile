@@ -1,16 +1,17 @@
 
 <script>
+import Experience from "@/components/Experience.vue"
+import Formation from "@/components/Formation.vue"
+
 export default {
+  components:{
+    Experience, Formation
+  },
   props:{
     // 宣告這個props的型別
-    msg:{
+    titlePage:{
       type:String,
       default: "Profile"
-    },
-    // 也可以用物件和預設值設定此props
-    msg2:{
-      type:String,
-      default: "My name is Tracy"
     }
   },
   setup(props){
@@ -22,17 +23,19 @@ export default {
 }
 </script>
 <template>
-<div id="profile" class="wrap">
-  <h1>{{props.msg}}</h1>
-  <h1>{{props.msg2}}</h1>
-</div>
-</template>
-<style scoped lang="scss">
+<div class="profile wrap">
+    <h1>{{props.titlePage}}</h1>
 
-#profile{
-width: 100%;
-  height: 2000px;
-  background-color: rgb(189, 223, 166);
-}
+<Experience />
+<Formation />
+</div>
+
+</template>
+<style lang="scss">
+@import "~@/assets/css/reset";
+@import "~@/assets/css/variables";
+@import "~@/assets/css/base";
+
+
 
 </style>

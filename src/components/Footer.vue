@@ -14,35 +14,41 @@ export default {
 </div>
 </template>
 <style scoped lang="scss">
+@import "~@/assets/css/reset";
+@import "~@/assets/css/variables";
+@import "~@/assets/css/base";
+
 #footer {
-  border-top: 1px solid #76b852;
+  border-top: 1px solid $color-primary;
   width: 100%;
   position: fixed;
   bottom: 0;
+  background-color: #fff;
 }
 .wrap {
     margin: auto;
     text-align: center;
     padding: 20px 0 15px;
-    @media screen and (max-width: 640px) {
-          padding: 10px 0 0;
+    @media (max-width: 575.98px) {
+      padding: 10px 0 0;
     }
-  > a {
+  > a  {
     transition: all .3s 0s ease-in;
     // color: rgb(223, 226, 223);
-    color: #76b852;
     display: inline-block;
-    
+    > i {
+      color: $color-primary;
+    }  
   }
   > a:hover{
-        cursor: pointer;
-        transform: translateY(-5px)
+    cursor: pointer;
+    transform: translateY(-5px)
   }
 }
 .devicon-linkedin-plain, .devicon-github-plain{
 font-size: 1.5em;
     padding: 10px;
-    /* color: #76b852; */
+    
     
     
 }

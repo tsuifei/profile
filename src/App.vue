@@ -10,8 +10,10 @@ export default {
   },
   setup() {
     const data = ref("Hello Tracy!")
+    const wrapAnim = ref(true);
     return {
       data,
+      wrapAnim
     }
   }
 };

@@ -5,53 +5,54 @@ export default {
 </script>
 
 <template>
-<div class="skills wrap">
+<div class="wrap">
   <h1>Skills</h1>
 <h3>Mes Competences</h3>
 
 <div class="skill__map">
-	<a href="https://whimsical.com/tsuifei-s-skills-AbLqkV8cgEY5YouZEDYvt4" target="_blanc"><img src="../assets/images/tsuifei_skills.png" alt="Tsuifei's skills mind map"></a></div>
-	  <ul class="skill__icons">
-    <li>
-        <i class="devicons devicon-javascript-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-vuejs-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-jquery-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-git-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-c-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-php-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-wordpress-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-mongodb-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-mysql-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-html5-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-css3-plain"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-sass-original"></i>
-    </li>
-    <li>
-        <i class="devicons devicon-bootstrap-plain"></i>
-    </li>
-  </ul>
+	<iframe style="border:none" width="100%" height="800px" src="https://whimsical.com/embed/AbLqkV8cgEY5YouZEDYvt4"></iframe>
+</div>
+<ul class="skill__icons">
+	<li>
+			<i class="devicons devicon-javascript-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-vuejs-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-jquery-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-git-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-c-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-php-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-wordpress-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-mongodb-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-mysql-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-html5-plain"></i>
+	</li>
+	<li>
+			<i class="devicons devicon-css3-plain"></i>
+	</li>
+	<li>
+		<i class="devicons devicon-sass-original"></i>
+	</li>
+	<li>
+		<i class="devicons devicon-bootstrap-plain"></i>
+	</li>
+</ul>
   <h3>COMPETENCES PRINCIPALES </h3>
   <p>
  JavaScript, 
@@ -75,7 +76,7 @@ export default {
 <h4 class="skill__second">Methodologies</h4>
 <p>SCRUM, Cascade</p>
 <h4 class="skill__second">Base de données</h4>
-<p>MySQL, MongoDB, Postman</p>
+<p>JSON, MySQL, MongoDB, Postman</p>
 <h4 class="skill__second">Système de gestion de contenu</h4>
 <p>WordPress, OpenCart, Prestashop, Drupal</p>
 
@@ -90,40 +91,41 @@ Rédaction des spécifications fonctionnelles, Recette, Communication, Travail e
 @import "~@/assets/css/base";
 
 
-.skills{
-	.skill__map{
-		padding-top: 50px;
-	}
-	.skill__primary{}
-	.skill__second{
-		font-size: 1.1rem;
-		color: $color-primary;
-		font-weight: 500;
-		margin-top: 1.3rem;
-		margin-bottom: 0.3rem;;
-		font-family:$font-title;
-		// text-transform:uppercase;
-		// capitalize, lowercase, uppercase
-		
-		}
-	.skill__icons {
-				//   padding-top: 30px;
-		margin: $spacing auto ($spacing /2);
-		// width: 80%;
-		display: flex;
-		flex-wrap:wrap;
-		/* justify-content: space-around; */
-		li {
-			padding-right: 2rem;
-			// padding-bottom: 2rem;
-			font-size: 3.5rem;
-			color: $color-primary;
-			i {
-			/* display: inline; */
-			font-size: 3rem;
-			color: $color-primary;
-			}
-		}
-	}
+
+.skill__map{
+    padding-top: 50px;
 }
+.skill__primary{}
+.skill__second{
+    font-size: 1.1rem;
+    color: $color-primary;
+    font-weight: 500;
+    margin-top: 1.3rem;
+    margin-bottom: 0.3rem;;
+    font-family:$font-title;
+    // text-transform:uppercase;
+    // capitalize, lowercase, uppercase
+    
+    }
+.skill__icons {
+            //   padding-top: 30px;
+    margin: $spacing auto ($spacing /2);
+    // width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+    /* justify-content: space-around; */
+    li {
+        padding-right: 2rem;
+        // padding-bottom: 2rem;
+        font-size: 3.5rem;
+        color: $color-primary;
+        i {
+        /* display: inline; */
+        font-size: 3rem;
+        color: $color-primary;
+        }
+    }
+}
+
+
 </style>

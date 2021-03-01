@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
 @import url(https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css);
-// @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,500,600,700,800);
 
 // Base 
-
 * {
   margin: 0;
   padding: 0;
@@ -27,22 +25,8 @@ body {
   font-family: $font-text;
   font-size: 16px;
   padding-top: 45px 20px;
-  // color:$color-second;
-    color:$color-dark; 
-  // @media screen and (max-width: 640px) {
-    
-  //     padding-top: 30px;
-  //   }
+  color:$color-dark; 
 }
-// a {
-//   text-decoration: none;
-//   color: rgb(93, 100, 97);
-// }
-
-// a:hover {
-//   color: #76b852;
-//   font-weight: 500;
-// }
 strong {
   font-weight: 600;
 }
@@ -52,15 +36,11 @@ h1{
   font-weight: 500;
   font-size: 2rem;
   color:$color-second;
-
 }
 h1::before{
   content: '[';
   color:lighten($color-primary,10%);
-  // color:#8b8b8b;
   padding-right: 5px;
-  
-  
 }
 h1::after{
   content: ']';
@@ -68,35 +48,31 @@ h1::after{
   padding-left: 5px;
 }
 .wrap {
-margin: 100px auto;
-// width: 100%;
-// height: 100%;
-max-width: 1240px;
-padding: 0 $spacing;
-// border: 1px solid red;
-// border: 2px solid red;
+  margin: auto;
+  margin-top: 130px;
+  height: 90vh;
+  max-width: 1240px;
+  padding: 0 $spacing;
+  // 淡入
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { 
-  // margin-top: 100px;
-  padding: 0 ($spacing * 0.4);
-  // background-color: rgb(250, 202, 202);
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { 
+    padding: 0 ($spacing * 0.4);
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+  }
+
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { 
+    margin-top: ($spacing * 1.5);
+  }
 }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
-  // background-color: yellow;
-  // padding: 0 20px; 
-}
-
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-  // background-color: greenyellow;
-  margin-top: ($spacing * 1.5);
-}
-}
-
-
 
 h3 {
 font-size: 1.4rem;
@@ -115,6 +91,7 @@ h5 {
   margin-bottom: 0.8rem;;
   font-family:$font-title;
 }
+
 p {
   font-size: 1rem;
   font-weight: 400;
@@ -122,3 +99,40 @@ p {
   line-height: 1.8;
 }
 
+// animation
+@keyframes fadein {
+  from {
+    opacity:0;
+    margin-top: 350px;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0;
+    margin-top: 350px;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0;
+    margin-top: 350px;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0;
+    margin-top: 350px;
+  }
+  to {
+    opacity: 1;
+  }
+}

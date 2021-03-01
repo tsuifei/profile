@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="portfolio wrap">
+  <div class="wrap">
   <h1>Portfolio</h1>
   <h3>Site Internet</h3>
   <p>MISSION : Webdesign du site, Intégration via CMS WordPress, Déploiement du serveur et installation du CMS, Identité visuelle ou logotype.</p>
@@ -125,14 +125,7 @@ export default {
 @import "~@/assets/css/variables";
 @import "~@/assets/css/base";
 
-.portfolio {
-  // width: 100%;
-  // height: 600px;
-  // background-color: rgb(230, 247, 186);
-  // > h1{
-  //   margin: 0;
-  //   padding-top: 20px;
-  // }
+
 
   .img__wrap{
     // z-index: -10;
@@ -204,6 +197,6 @@ export default {
     height: 30%;
   }
   
-}
+
 
 </style>

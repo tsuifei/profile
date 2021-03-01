@@ -21,7 +21,6 @@ export default {
 #footer {
   border-top: 1px solid $color-primary;
   width: 100%;
-  position: fixed;
   bottom: 0;
   background-color: #fff;
 }
@@ -34,7 +33,6 @@ export default {
     }
   > a  {
     transition: all .3s 0s ease-in;
-    // color: rgb(223, 226, 223);
     display: inline-block;
     > i {
       color: $color-primary;
@@ -46,10 +44,7 @@ export default {
   }
 }
 .devicon-linkedin-plain, .devicon-github-plain{
-font-size: 1.5em;
-    padding: 10px;
-    
-    
-    
+  font-size: 1.5em;
+   padding: 10px;
 }
 </style>

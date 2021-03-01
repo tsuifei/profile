@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <template>
-<div class="profile wrap">
+<div class="wrap">
     <h1>{{props.titlePage}}</h1>
 
 <Experience />
@@ -35,7 +35,4 @@ export default {
 @import "~@/assets/css/reset";
 @import "~@/assets/css/variables";
 @import "~@/assets/css/base";
-
-
-
 </style>

@@ -13,14 +13,11 @@ export default {
         <p>Programmation / Développement informatique</p>
         <div class="form___info">Paris</div>
     </li>
-
-
     <li class="form__date" data-year="Nov 2016 - Avril 2017">
       <h5 class="form__ecole">Campus fonderie de l’image</h5>
       <p>Developpeur Intégrateur de Médias Interactifs</p>
       <div class="form___info">Bagnolet</div>  
     </li>
-
     <li class="form__date" data-year="1989 - 1993">
       <h5 class="form__ecole">École professionnelle de Designer CHIH-JEN</h5>
       <p class="form__title">Licence professionnelle en graphisme</p>
@@ -34,6 +31,7 @@ export default {
 @import "~@/assets/css/reset";
 @import "~@/assets/css/variables";
 @import "~@/assets/css/base";
+
 .formation {
   .form__timeline {
     border-left: $line solid lighten($color-second,30%);
@@ -53,15 +51,12 @@ export default {
     font-weight: 100;  
     max-width: 85%;
     @media (max-width: 575.98px) {
-      // margin: $spacing ($spacing * 0.1) $spacing $spacing; 
       margin: ($spacing * 0.1); 
       padding: ($spacing * 0.3);
       max-width: 100%; 
     } 
-  
     
     .form__date {
-      // border-bottom: 1px dashed $color-second;
       border-bottom: 1px dashed lighten($color-second,30%);
       padding-bottom: ($spacing * 0.5);
       margin-bottom: $spacing;  
@@ -107,8 +102,6 @@ export default {
       }
     }
     .form__ecole {
-      // font-weight: 300;
-      // padding-top: 0.3rem;
       font-weight: 400;
       padding-top: 0.3rem;
       color:lighten($color-second,30%);
@@ -121,7 +114,6 @@ export default {
     color: $color-gris;
     font-size: 1rem;
     margin-top: 0.5rem;
-    // font-family: $font-title;
     font-weight: 300;
     }
   }
@@ -139,3 +131,8 @@ h5 {
 }
 
 </style>
+
+
+
+
+

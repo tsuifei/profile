@@ -4,7 +4,6 @@ export default {
   setup(){
     const isOpenMenu = ref(false)
     const handOpenMenu = ()=>{
-      // console.log('click')
       isOpenMenu.value = !isOpenMenu.value 
     }
     return {
@@ -12,10 +11,9 @@ export default {
       handOpenMenu
     }
   }
-  
   }
-
 </script>
+
 <template>
 <div id="header" :class="{openMenu:isOpenMenu}" >
   <nav >
@@ -30,6 +28,7 @@ export default {
 
 </div>
 </template>
+
 <style scoped lang="scss">
 @import "~@/assets/css/reset";
 @import "~@/assets/css/variables";
@@ -69,7 +68,6 @@ export default {
       width: 100%;
     }
     > .my-name {
-      // display: block;
       font-size: 2.5rem;
       font-weight: 600;
       text-decoration: none;

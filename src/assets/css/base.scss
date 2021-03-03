@@ -50,9 +50,8 @@ h1::after{
 .wrap {
   margin: auto;
   margin-top: 130px;
-  height: 90vh;
   max-width: 1240px;
-  padding: 0 $spacing;
+  padding: 0 $spacing $spacing;
   // 淡入
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
@@ -71,6 +70,7 @@ h1::after{
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) { 
     margin-top: ($spacing * 1.5);
+    padding: 10px 0 0;
   }
 }
 

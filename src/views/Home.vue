@@ -15,7 +15,7 @@ export default {
   <div class="open">
     <h1 class="open__title">Bonjour ! je suis TsuiFei,</h1>
     <h1 class="open__title">Développeur front-end à Paris.</h1>
-  <p class="open__sub__title">Bienvenue sur mon portfolio !</p>
+  <p class="open__sub__title">Bienvenue sur mon profile !</p>
   </div>
   <img class="tsuifei" src="../assets/images/tsuifei42.png" alt="c'est moi, Tsuifei">
 </div>

@@ -23,24 +23,22 @@ export default {
   width: 100%;
   bottom: 0;
   background-color: #fff;
-}
-.wrap {
+  
+  .wrap {
     margin: auto;
     text-align: center;
     padding: 20px 0 15px;
-    @media (max-width: 575.98px) {
-      padding: 10px 0 0;
+    > a  {
+      transition: all .3s 0s ease-in;
+      display: inline-block;
+      > i {
+        color: $color-primary;
+      }  
     }
-  > a  {
-    transition: all .3s 0s ease-in;
-    display: inline-block;
-    > i {
-      color: $color-primary;
-    }  
-  }
-  > a:hover{
-    cursor: pointer;
-    transform: translateY(-5px)
+    > a:hover{
+      cursor: pointer;
+      transform: translateY(-5px)
+    }
   }
 }
 .devicon-linkedin-plain, .devicon-github-plain{

@@ -1,29 +1,34 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-// import Profile from '../views/Profile.vue'
-// import Skills from '../views/Skills.vue'
-// import Portfolio from '../views/Portfolio.vue'
+import Profile from '../views/Profile.vue'
+import Skills from '../views/Skills.vue'
+import Portfolio from '../views/Portfolio.vue'
+
+
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Bienvenue sur TsuiFei profile !'
+    }
   },
   {
     path: '/profile',
-    name: 'profile',
-    component: () => import('../views/Profile.vue')
+    name: 'Profile',
+    component: Profile
   },
   {
     path: '/skills',
-    name: 'skills',
-    component: () => import('../views/Skills.vue')
+    name: 'Skills',
+    component: Skills
   },
   {
     path: '/portfolio',
     name: 'Portfolio',
-    component: () => import('../views/Portfolio.vue')
+    component: Portfolio
   },
   // {
   //   path: '/about',
@@ -41,3 +46,5 @@ const router = createRouter({
 })
 
 export default router
+
+

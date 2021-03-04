@@ -53,10 +53,10 @@ h1::after{
   max-width: 1240px;
   padding: 0 $spacing $spacing;
   // 淡入
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  // animation: fadein 2s;
+  // -moz-animation: fadein 2s; /* Firefox */
+  // -webkit-animation: fadein 2s; /* Safari and Chrome */
+  // -o-animation: fadein 2s; /* Opera */
 
   // Large devices (desktops, less than 1200px)
   @media (max-width: 1199.98px) { 
@@ -70,7 +70,7 @@ h1::after{
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) { 
     margin-top: ($spacing * 1.5);
-    padding: 10px 0 0;
+    padding: 10px;
   }
 }
 

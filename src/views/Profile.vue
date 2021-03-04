@@ -23,7 +23,7 @@ export default {
 }
 </script>
 <template>
-<div class="wrap">
+<div class="wrap" data-aos="fade-up">
     <h1>{{props.titlePage}}</h1>
 
 <Experience />

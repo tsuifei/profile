@@ -5,14 +5,17 @@ export default {
 </script>
 
 <template>
-<div class="wrap">
+<div class="wrap" data-aos="fade-up">
   <h1>Skills</h1>
 <h3>Mes Competences</h3>
 
 <div class="skill__map">
-	<iframe style="border:none" width="100%" height="800px" src="https://whimsical.com/embed/AbLqkV8cgEY5YouZEDYvt4"></iframe>
+	<a href="https://whimsical.com/my-skills-AbLqkV8cgEY5YouZEDYvt4">
+	<img src="~@/assets/images/mySkills.png" alt="my skills">
+	</a>
+	<!-- <iframe style="border:none" width="100%" src="https://whimsical.com/embed/AbLqkV8cgEY5YouZEDYvt4"></iframe> -->
 </div>
-<ul class="skill__icons">
+<ul class="skill__icons" data-aos="fade-up">
 	<li>
 			<i class="devicons devicon-javascript-plain"></i>
 	</li>
@@ -94,6 +97,15 @@ Rédaction des spécifications fonctionnelles, Recette, Communication, Travail e
 
 .skill__map{
     padding-top: 50px;
+		> img{
+			width: 100%;
+			height: 800px;
+			@media screen and (max-width: 575.98px) {
+      width: 100%;
+			height:auto;
+    	}
+		}
+		
 }
 .skill__primary{}
 .skill__second{
@@ -108,23 +120,21 @@ Rédaction des spécifications fonctionnelles, Recette, Communication, Travail e
     
     }
 .skill__icons {
-            //   padding-top: 30px;
-    margin: $spacing auto ($spacing /2);
-    // width: 80%;
-    display: flex;
-    flex-wrap:wrap;
-    /* justify-content: space-around; */
-    li {
-        padding-right: 2rem;
-        // padding-bottom: 2rem;
-        font-size: 3.5rem;
-        color: $color-primary;
-        i {
-        /* display: inline; */
-        font-size: 3rem;
-        color: $color-primary;
-        }
-    }
+	margin: $spacing auto ($spacing /2);
+	display: flex;
+	flex-wrap:wrap;
+	li {
+		padding-right: 2rem;
+		font-size: 3.5rem;
+		color: $color-primary;
+		i {
+		font-size: 3rem;
+		color: $color-primary;
+		}
+	}
+	@media screen and (max-width: 575.98px) {
+		display: none;
+	}
 }
 
 

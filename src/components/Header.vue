@@ -20,9 +20,11 @@ export default {
     <router-link to="/" class="my-name">TsuiFei Pommier</router-link>
     <a @click="handOpenMenu" href="javascript:;" class="menu_btn"></a>
     <div>
-      <router-link to="/profile"><a @click="handOpenMenu">Profile</a></router-link>
-      <router-link to="/skills"><a @click="handOpenMenu">Skills</a></router-link>
-      <router-link to="/portfolio"><a @click="handOpenMenu">Portfolio</a></router-link>
+      <router-link to="/profile" @click="handOpenMenu">Profile</router-link>
+      <router-link to="/skills" @click="handOpenMenu">Skills</router-link>
+      <router-link to="/portfolio" @click="handOpenMenu">Portfolio</router-link>
+      <a class="nav__icon" href="https://www.linkedin.com/in/pommier-tsuifei/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+      <a class="nav__icon" href="https://github.com/tsuifei/" target="_blank"><i class="devicon-github-plain"></i></a>
     </div>
   </nav>
 
@@ -48,10 +50,10 @@ export default {
     transition: height 0.2s;
     height: auto;
     overflow: hidden;
-    padding: 0 20px;
+    // padding: 0 20px;
     
     &.openMenu {
-      height: 230px;
+      height: 340px;
     }
   }
 
@@ -96,6 +98,9 @@ export default {
         padding: 0 0 0 20px;
         text-decoration: none;
         transition: all 0.3s ease-in;
+      > .nav__icon{
+        padding: 0 0 0 0px;
+      }  
         @media screen and (max-width: 575.98px) {
           width: 100%;
           height: auto;
@@ -111,21 +116,25 @@ export default {
       }
     }
   }
+  .devicon-linkedin-plain, .devicon-github-plain{
+  font-size: 1em;
+  //  padding: 10px;
+   color: $color-second;
+  }
 }
-
 
 a.menu_btn{
   display: none;
   @media screen and (max-width: 575.98px) {
   width: 40px;
   height: 40px;
-  background-color: $color-second;
   display: block;
-  color: #fff;
+  color: rgb(245, 239, 239);
   position: absolute;
   top: 15px;
   right: 20px;
   border-radius: 5px;
+  border: 2px solid rgb(245, 239, 239);
   }
 }
 
@@ -134,7 +143,7 @@ a.menu_btn{
   content: '';
   position: absolute;
   height: 2px;
-  width: 30px;
+  width: 25px;
   left: 5px;
   background-color: #fff;
   top: 0;

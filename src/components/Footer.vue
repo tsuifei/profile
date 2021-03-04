@@ -44,5 +44,6 @@ export default {
 .devicon-linkedin-plain, .devicon-github-plain{
   font-size: 1.5em;
    padding: 10px;
+   color: #fff;
 }
 </style>

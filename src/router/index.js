@@ -4,8 +4,6 @@ import Experiences from '../views/Experiences.vue'
 import Skills from '../views/Skills.vue'
 import Portfolio from '../views/Portfolio.vue'
 
-
-
 const routes = [
   {
     path: '/',
@@ -26,7 +24,8 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: Portfolio
-  }
+  },
+  { path: '/*', component: Home }
   // {
   //   path: '/about',
   //   name: 'About',

@@ -92,9 +92,6 @@ Rédaction des spécifications fonctionnelles, Recette, Communication, Travail e
 @import "~@/assets/css/reset";
 @import "~@/assets/css/variables";
 @import "~@/assets/css/base";
-
-
-
 .skill__map{
     padding-top: 50px;
 		> img{

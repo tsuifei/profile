@@ -5,7 +5,8 @@ import Formation from "@/components/Formation.vue"
 
 export default {
   components:{
-    JobTimeline, Formation
+    JobTimeline, 
+    Formation
   },
   props:{
     // 宣告這個props的型別

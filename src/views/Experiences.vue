@@ -1,11 +1,11 @@
 
 <script>
-import Experience from "@/components/Experience.vue"
+import JobTimeline from "@/components/JobTimeline.vue"
 import Formation from "@/components/Formation.vue"
 
 export default {
   components:{
-    Experience, Formation
+    JobTimeline, Formation
   },
   props:{
     // 宣告這個props的型別
@@ -26,7 +26,7 @@ export default {
 <div class="wrap" data-aos="fade-up">
     <h1>{{props.titlePage}}</h1>
 
-<Experience />
+<JobTimeline />
 <Formation />
 </div>
 

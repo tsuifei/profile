@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Profile from '../views/Profile.vue'
+import Experiences from '../views/Experiences.vue'
 import Skills from '../views/Skills.vue'
 import Portfolio from '../views/Portfolio.vue'
 
@@ -10,26 +10,23 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
-    meta: {
-      title: 'Bienvenue sur TsuiFei profile !'
-    }
+    component: Home
   },
   {
-    path: '/profile',
-    name: 'Profile',
-    component: Profile
+    path: '/experiences',
+    name: 'Experiences',
+    component: Experiences
   },
   {
     path: '/skills',
-    name: 'Skills',
+    name: 'skills',
     component: Skills
   },
   {
     path: '/portfolio',
-    name: 'Portfolio',
+    name: 'portfolio',
     component: Portfolio
-  },
+  }
   // {
   //   path: '/about',
   //   name: 'About',

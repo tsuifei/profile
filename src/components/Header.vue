@@ -20,7 +20,7 @@ export default {
     <router-link to="/" class="my-name">TsuiFei Pommier</router-link>
     <a @click="handOpenMenu" href="javascript:;" class="menu_btn"></a>
     <div>
-      <router-link to="/profile" @click="handOpenMenu">Profile</router-link>
+      <router-link to="/experiences" @click="handOpenMenu">Experiences</router-link>
       <router-link to="/skills" @click="handOpenMenu">Skills</router-link>
       <router-link to="/portfolio" @click="handOpenMenu">Portfolio</router-link>
       <a class="nav__icon" href="https://www.linkedin.com/in/pommier-tsuifei/" target="_blank"><i class="devicon-linkedin-plain"></i></a>

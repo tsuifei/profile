@@ -1,7 +1,4 @@
 <script>
-// import Main from "@/components/Main.vue"
-
-
 // @ is an alias to /src
 export default {
   // name: 'Home',

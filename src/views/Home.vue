@@ -23,29 +23,32 @@ export default {
 @import "~@/assets/css/reset";
 @import "~@/assets/css/variables";
 @import "~@/assets/css/base";
+.wrap {
+  height: 100vh;
+}
 .home {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  // vertical-align: middle;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { 
+  }
   // X-Small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) { 
-    padding-top: 80px;
+    padding-top: 10px;
     text-align: center;
-  // padding-bottom: 150px;
-  // vertical-align: middle;
+    flex-wrap: wrap;
+    align-content:space-around;
   }
 }
 
 .tsuifei {
-  display: inline-block;
-  margin-left: 80px;
   width: 350px;
   height: 350px;
-  opacity: 1;
   border-radius: 70% 30% 70% 30%/20% 80% 30% 70%;
   vertical-align: middle;
   @media (max-width: 575.98px) { 
-    margin-left: 0px;
     margin-top: 20px;
     width: 80%;
     height: auto;
@@ -53,13 +56,16 @@ export default {
 }
 
 .open {
-  display: inline-block;
-  vertical-align: middle;
   .open__title {
     margin: 0;
     font-weight: 500;
     font-size: 3rem;
     color:$color-second;
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { 
+      font-size: 2.5rem;
+      line-height: 50px;
+    }
     @media (max-width: 575.98px) { 
       font-size: 2rem;
       line-height: 40px;

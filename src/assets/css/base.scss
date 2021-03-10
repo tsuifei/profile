@@ -52,11 +52,6 @@ h1::after{
   margin-top: 130px;
   max-width: 1240px;
   padding: 0 $spacing $spacing;
-  // 淡入
-  // animation: fadein 2s;
-  // -moz-animation: fadein 2s; /* Firefox */
-  // -webkit-animation: fadein 2s; /* Safari and Chrome */
-  // -o-animation: fadein 2s; /* Opera */
 
   // Large devices (desktops, less than 1200px)
   @media (max-width: 1199.98px) { 
@@ -99,40 +94,3 @@ p {
   line-height: 1.8;
 }
 
-// animation
-@keyframes fadein {
-  from {
-    opacity:0;
-    margin-top: 350px;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-moz-keyframes fadein { /* Firefox */
-  from {
-    opacity:0;
-    margin-top: 350px;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-    opacity:0;
-    margin-top: 350px;
-  }
-  to {
-    opacity:1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-    opacity:0;
-    margin-top: 350px;
-  }
-  to {
-    opacity: 1;
-  }
-}

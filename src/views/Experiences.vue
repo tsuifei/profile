@@ -12,7 +12,7 @@ export default {
     // 宣告這個props的型別
     titlePage:{
       type:String,
-      default: "Profile"
+      default: "Experiences"
     }
   },
   setup(props){

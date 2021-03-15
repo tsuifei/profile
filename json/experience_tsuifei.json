@@ -1,0 +1,73 @@
+[
+  {
+    "data_year": "Nov 2019 - 2020",
+    "title": "Développeuse Front-end / Intégratrice",
+    "content": [
+      "Conception, développement et Intégration du site web Installation et maintenance",
+      "Prise en compte des compatibilités croisées sur tous les navigateurs",
+      "Intégration web avec VueJs"
+    ],
+    "skills": "HTML, CSS, RWD, JavaScript, VueJs, SASS, Git, WordPress, Shell",
+    "info": "Projets personnels | Paris - Taiwan"
+  },
+  {
+    "data_year": "Mai 2019 - Oct 2019",
+    "title": "Développeuse Front-end / Intégratrice",
+    "content": [
+      "Effectuer la maintenance évolutive et corrective des applications VueJs (2.6)",
+      "Prise en compte des compatibilités croisées sur tous les navigateurs",
+      "Intégration d’API Rest en coordination avec l'équipe backend",
+      "Intégration web avec VueJs"
+    ],
+    "skills": "HTML, CSS, RWD, JavaScript, SASS, Bootstrap, Git, Shell, VueJs",
+    "info": "Good Ideas Studio | Taïwan"
+  },
+  {
+    "data_year": "Oct 2018 - Avril 2019",
+    "title": "Développeuse web",
+    "content": [
+      "Conception, développement et Intégration du site web Installation et maintenance d'une plateforme Moodle d'apprentissage en ligne.",
+      "Rechercher et création de visuelle pour les documents multimedia de presentation."
+    ],
+    "skills": "HTML, CSS, RWD, JavaScript, WordPress, PHP, MySql, Shell.",
+    "info": "VirtualiSurg . stage | Paris"
+  },
+  {
+    "data_year": "Sept 2007 - Avril 2016",
+    "title": "Développeuse web / Intégratrice / Graphiste / Infographiste",
+    "content": [
+      "Conception, web design et développement de 4 sites internet dont 1 site de e-commerce B2B, intégration des interfaces adaptées pour le client.",
+      "Intégration et création des newsletters e-commerce et documents multimédia."
+    ],
+    "skills": "HTML, CSS, JavaScript, Jquery, PHP, MySql, Photoshop, Illustrateur, InDesign.",
+    "info": "PC International | Paris "
+  },
+  {
+    "data_year": "2005 - Aout 2007",
+    "title": "Développeuse web / Webdesigner Freelance",
+    "content": [
+      "Développement et Création de sites web:Cahier des charges, Design graphique, Integration, Développement."
+    ],
+    "skills": "HTML, CSS, JavaScript, Jquery, WordPress, PHP, MySql, Photoshop, Illustrator",
+    "info": "Indépendant | Paris"
+  },
+  {
+    "data_year": "2003 - 2005",
+    "title": "Développeuse web / Webdesigner",
+    "content": [
+      "Conception, Design et Développement des sites Web de deux marques de haute couture.",
+      "Conception graphique du site et print"
+    ],
+    "skills": " Flash, JavaScript, CSS, HTML, Photoshop, Illustrator",
+    "info": "Yufengshawn Haute Couture | Paris, "
+  },
+  {
+    "data_year": "1993 - 2001",
+    "title": "Graphiste / Infographiste",
+    "content": [
+      "Conception graphique Print ( identité visuelle, logo, brochure, affiche, presse,…)."
+    ],
+    "skills": " Photoshop, Illustrator, Indesign, Flash, Dreamweaver, actionScript",
+    "info": "Taipei Taïwan"
+  }
+]
